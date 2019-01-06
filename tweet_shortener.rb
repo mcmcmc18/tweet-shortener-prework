@@ -40,9 +40,9 @@ end
 def shortened_tweet_truncator(tweet)
   tweet.split(" ").map do |phrase|
     if phrase.length > 140
-      word_substituter(phrase) + "..."
+      puts word_substituter(phrase) + "..."
     else
-      phrase
+      puts phrase
     end
   end.join(" ")
 end
